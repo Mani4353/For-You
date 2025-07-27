@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>خانه عشق 💌</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="container">
+    <img id="bg-house" src="images/house.png" alt="خانه">
+    <img id="mailbox" src="images/mailbox_closed.png" alt="صندوق پست">
+
+    <!-- پیام بالای صفحه -->
+    <div id="notification">📬 یه نامه جدید داری، برو صندوق پست رو نگاه کن</div>
+
+    <!-- اینونتوری بالا -->
+    <div id="item-boxes">
+      <div class="item-slot"></div>
+      <div class="item-slot"></div>
+      <div class="item-slot"></div>
+      <div class="item-slot"></div>
+    </div>
+
+    <!-- صداها -->
+    <audio id="mail-sound" src="sounds/mail-open.mp3" preload="auto"></audio>
+    <audio id="bg-music" src="sounds/background-piano.mp3" preload="auto" loop></audio>
+    <audio id="notify-sound" src="sounds/notification.mp3" preload="auto"></audio>
+    <audio id="paper-sound" src="sounds/paper_sound.mp3"></audio>
+  </div>
+
+  <!-- مودال نمایش نامه -->
+  <!-- 📖 پنجره نمایش نامه -->
+<div id="letter-modal">
+  <div id="letter-content">
+    <img src="images/letter.png" alt="نامه">
+    <div id="letter-caption" style="display: none;">تو:</div>
+  </div>
+</div>
+
+
+<div id="long-text-modal" class="modal">
+  <button id="close-long-text" style="
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    color: #444;
+    cursor: pointer;
+  ">&times;</button>
+
+  <div id="long-text-content" class="modal-scroll">
+    <!-- متن نامه اینجا نمایش داده میشه -->
+  </div>
+  <button id="get-seed-btn" style="
+  margin-top: 30px;
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #212529;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+">
+  🪐 برداشتن شی عجیب
+</button>
+</div>
+
+
+
+  <script src="js/script.js"></script>
+</body>
+</html>
